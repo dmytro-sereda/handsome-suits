@@ -1,0 +1,47 @@
+// COLORS
+$color-main-dark: #333;
+$color-main-light: #666;
+$color-secondary: #781b2d;
+$color-tertiary-dark: #858585;
+$color-tertiary-light: #f4f4f6;
+
+// SHADOWS
+$shadow-main-dark: 0 0 2rem rgba(#000, 0.05);
+
+// BREAKPOINTS
+$bp-largest: 98.75em;
+$bp-large: 80em;
+$bp-big: 60em;
+$bp-medium: 48.75em;
+$bp-small: 37.5em;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: 'Futura PT', sans-serif;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 37.5%;
+  }
+}
+
+.main {
+  max-width: 158rem;
+  margin: 0 auto;
+
+  @media only screen and (max-width: $bp-big) {
+    margin: 0 2%;
+  }
+}

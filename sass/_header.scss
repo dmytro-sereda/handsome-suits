@@ -1,0 +1,52 @@
+.header {
+  padding: 4rem 0;
+  border-bottom: 1px solid $color-main-dark;
+
+  &__container {
+    max-width: 158rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+
+    @media only screen and (max-width: $bp-medium) {
+      padding: 0 2%;
+    }
+  }
+
+  .logo {
+    width: 8.5rem;
+    height: 100%;
+    display: block;
+  }
+
+  &__search {
+    display: flex;
+    align-items: center;
+  }
+
+  &__input {
+    display: block;
+    width: 31rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid $color-main-dark;
+    color: $color-main-dark;
+    font-size: 2rem;
+    font-family: 'Futura PT', sans-serif;
+    margin-right: 1.5rem;
+    background: url(../img/search.svg) no-repeat right center;
+    @media only screen and (max-width: $bp-largest) {
+      background-size: 1.5rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      display: none;
+    }
+
+    &::placeholder {
+      color: currentColor;
+      opacity: 1;
+    }
+  }
+}

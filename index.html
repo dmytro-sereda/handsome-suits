@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <script defer src="js/main.js"></script> -->
+    <script defer src="js/controller.js"></script>
+
+    <!-- <script src="./node_modules/chart.js/dist/chart.js"></script> -->
+    <title>Handsome Suits</title>
+  </head>
+  <body>
+    <div class="side-menu">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#suits" class="nav__link">Suits</a>
+          </li>
+          <li class="nav__item">
+            <a href="#product" class="nav__link">Product</a>
+          </li>
+          <li class="nav__item"><a href="#bag" class="nav__link">Bag</a></li>
+        </ul>
+      </nav>
+      <input type="text" class="header__input" placeholder="Search" />
+    </div>
+
+    <header class="header">
+      <div class="header__container">
+        <div class="hamburger">
+          <span></span>
+        </div>
+
+        <img
+          srcset="img/logo-1x.png 1x, img/logo-2x.png 2x"
+          alt=""
+          class="logo"
+        />
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#suits" class="nav__link">Suits</a>
+            </li>
+            <li class="nav__item">
+              <a href="#product" class="nav__link">Product</a>
+            </li>
+            <li class="nav__item"><a href="#bag" class="nav__link">Bag</a></li>
+          </ul>
+        </nav>
+
+        <div class="header__search">
+          <input type="text" class="header__input" placeholder="Search" />
+
+          <svg class="bag--icon">
+            <use xlink:href="img/sprite.svg#bag"></use>
+          </svg>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="suits" id="suits">
+        <p class="map">
+          <a href="#" class="map__link">Homepage</a> >
+          <a href="#" class="map__link">Products</a>
+        </p>
+
+        <h2 class="heading-2 mt-sm">Men Suits</h2>
+
+        <div class="suits__container mt-sm">
+          <a href="" class="filters__btn"> Filters</a>
+          <div class="filters">
+            <div class="filters__designer filters__container">
+              <h3 class="heading-3 mb-sm">Designer</h3>
+              <div class="filters__checkbox--wrapper">
+                <div class="filters__checkbox--container">
+                  <label class="filters__checkbox"
+                    >Tom Ford
+                    <input type="checkbox" />
+                    <span class="filters__checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="filters__checkbox--container">
+                  <label class="filters__checkbox"
+                    >Gucci
+                    <input type="checkbox" />
+                    <span class="filters__checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="filters__checkbox--container">
+                  <label class="filters__checkbox"
+                    >Louis Vietton
+                    <input type="checkbox" />
+                    <span class="filters__checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="filters__checkbox--container">
+                  <label class="filters__checkbox"
+                    >Arber
+                    <input type="checkbox" />
+                    <span class="filters__checkmark"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="filters__color filters__container">
+              <h3 class="heading-3 mb-sm">Color</h3>
+              <div class="filters__checkbox--wrapper">
+                <div class="filters__checkbox--container">
+                  <label class="filters__checkbox"
+                    >Black
+                    <input type="checkbox" />
+                    <span class="filters__checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="filters__checkbox--container">
+                  <label class="filters__checkbox"
+                    >Gold
+                    <input type="checkbox" />
+                    <span class="filters__checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="filters__checkbox--container">
+                  <label class="filters__checkbox"
+                    >Green
+                    <input type="checkbox" />
+                    <span class="filters__checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="filters__checkbox--container">
+                  <label class="filters__checkbox"
+                    >White
+                    <input type="checkbox" />
+                    <span class="filters__checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="filters__checkbox--container">
+                  <label class="filters__checkbox"
+                    >Brown
+                    <input type="checkbox" />
+                    <span class="filters__checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="filters__checkbox--container">
+                  <label class="filters__checkbox"
+                    >Grey
+                    <input type="checkbox" />
+                    <span class="filters__checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="filters__checkbox--container">
+                  <label class="filters__checkbox"
+                    >Blue
+                    <input type="checkbox" />
+                    <span class="filters__checkmark"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="filters__size filters__container">
+              <h3 class="heading-3 mb-sm">Size</h3>
+
+              <div class="filters__size--btn--row">
+                <button class="filters__size--btn">Xs</button>
+                <button class="filters__size--btn">S</button>
+                <button class="filters__size--btn">M</button>
+              </div>
+
+              <div class="filters__size--btn--row">
+                <button class="filters__size--btn">L</button>
+                <button class="filters__size--btn">Xl</button>
+                <button class="filters__size--btn">Xxl</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="suits__container--wrapper">
+            <div
+              class="suits__item"
+              data-img1="img/suit-1-1-1x.png 1x, img/suit-1-1-2x.png 2x"
+              data-img2=""
+              data-code="1111"
+            >
+              <div class="suits__item--container">
+                <img
+                  srcset="img/suit-1-1x.png 1x, img/suit-1-2x.png 2x"
+                  alt="Item photo"
+                  class="suits__item--img"
+                />
+                <a href="#" class="suits__item--btn">QUICKVIEW</a>
+              </div>
+
+              <h5 class="heading-5">Tom Ford</h5>
+              <p class="suits__item--name">Grey Flannel Stripe Atticus Suit</p>
+              <p class="suits__item--price">1500$</p>
+            </div>
+
+            <div
+              class="suits__item"
+              data-img1="img/suit-2-1-1x.png 1x, img/suit-2-1-2x.png 2x"
+              data-img2="img/suit-2-2-1x.png 1x, img/suit-2-2-2x.png 2x"
+              data-code="2222"
+            >
+              <div class="suits__item--container">
+                <img
+                  srcset="img/suit-2-1x.png 1x, img/suit-2-2x.png 2x"
+                  alt="Item photo"
+                  class="suits__item--img"
+                />
+                <a href="#" class="suits__item--btn">QUICKVIEW</a>
+              </div>
+
+              <h5 class="heading-5">Tom Ford</h5>
+              <p class="suits__item--name">
+                Military Green High Mohair Silk Atticus Suit
+              </p>
+              <p class="suits__item--price">2175$</p>
+            </div>
+
+            <div
+              class="suits__item"
+              data-img1="img/suit-3-1-1x.png 1x, img/suit-3-1-2x.png 2x"
+              data-img2="img/suit-3-2-1x.png 1x, img/suit-3-2-2x.png 2x"
+              data-code="3333"
+            >
+              <div class="suits__item--container">
+                <img
+                  srcset="img/suit-3-1x.png 1x, img/suit-3-2x.png 2x"
+                  alt="Item photo"
+                  class="suits__item--img"
+                />
+                <a href="#" class="suits__item--btn">QUICKVIEW</a>
+              </div>
+
+              <h5 class="heading-5">Tom Ford</h5>
+              <p class="suits__item--name">Black Pinstripe Shelton Suit</p>
+              <p class="suits__item--price">2500$</p>
+            </div>
+
+            <div
+              class="suits__item"
+              data-img1="img/suit-4-1-1x.png 1x, img/suit-4-1-2x.png 2x"
+              data-img2="img/suit-4-2-1x.png 1x, img/suit-4-2-2x.png 2x"
+              data-code="4444"
+            >
+              <div class="suits__item--container">
+                <img
+                  srcset="img/suit-4-1x.png 1x, img/suit-4-2x.png 2x"
+                  alt="Item photo"
+                  class="suits__item--img"
+                />
+                <a href="#" class="suits__item--btn">QUICKVIEW</a>
+              </div>
+
+              <h5 class="heading-5">Tom Ford</h5>
+              <p class="suits__item--name">
+                Brushed Cashmere Twill O'connor Jacket
+              </p>
+              <p class="suits__item--price">4000$</p>
+            </div>
+
+            <div
+              class="suits__item"
+              data-img1="img/suit-5-1-1x.png 1x, img/suit-5-1-2x.png 2x"
+              data-img2="img/suit-5-2-1x.png 1x, img/suit-5-2-2x.png 2x"
+              data-code="5555"
+            >
+              <div class="suits__item--container">
+                <img
+                  srcset="img/suit-5-1x.png 1x, img/suit-5-2x.png 2x"
+                  alt="Item photo"
+                  class="suits__item--img"
+                />
+                <a href="#" class="suits__item--btn">QUICKVIEW</a>
+              </div>
+
+              <h5 class="heading-5">Tom Ford</h5>
+              <p class="suits__item--name">
+                Navy Prince Of Wales O’Connor Suit
+              </p>
+              <p class="suits__item--price">1250$</p>
+            </div>
+
+            <div
+              class="suits__item"
+              data-img1="img/suit-6-1-1x.png 1x, img/suit-6-1-2x.png 2x"
+              data-img2="img/suit-6-2-1x.png 1x, img/suit-6-2-2x.png 2x"
+              data-code="6666"
+            >
+              <div class="suits__item--container">
+                <img
+                  srcset="img/suit-6-1x.png 1x, img/suit-6-2x.png 2x"
+                  alt="Item photo"
+                  class="suits__item--img"
+                />
+                <a href="#" class="suits__item--btn">QUICKVIEW</a>
+              </div>
+
+              <h5 class="heading-5">Tom Ford</h5>
+              <p class="suits__item--name">
+                Prince Of Wales Check Atticus Suit
+              </p>
+              <p class="suits__item--price">1250$</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="product hidden" id="product">
+        <div class="product__img--container">
+          <div class="product__img--wrapper">
+            <img
+              srcset="img/suit-2-1-1x.png 1x, img/suit-2-1-2x.png 2x"
+              alt="Suit image"
+              class="product__img"
+            />
+          </div>
+
+          <div class="product__img--wrapper">
+            <img
+              srcset="img/suit-2-2-1x.png 1x, img/suit-2-2-2x.png 2x"
+              alt="Suit image"
+              class="product__img"
+            />
+          </div>
+
+          <div class="product__img--wrapper active--img">
+            <img
+              srcset="img/suit-2-1x.png 1x, img/suit-2-2x.png 2x"
+              alt="Suit image"
+              class="product__img"
+            />
+          </div>
+        </div>
+
+        <div class="product__display">
+          <img
+            srcset="img/suit-2-1x.png 1x, img/suit-2-2x.png 2x"
+            alt="Suit image"
+            class="product__display--img"
+          />
+        </div>
+
+        <div class="product__description">
+          <div class="product__description--info--container">
+            <h4 class="heading-4 mb-md">
+              MILITARY GREEN HIGH MOHAIR SILK ATTICUS SUIT
+            </h4>
+
+            <div class="product__description--char">
+              <div class="product__description--item">
+                <p class="product__description--label">Item Price:</p>
+                <p class="product__description--price">2175$</p>
+              </div>
+
+              <div class="product__description--item">
+                <p class="product__description--label">Color:</p>
+                <div class="product__description--color"></div>
+              </div>
+
+              <div class="product__description--item">
+                <p class="product__description--label">Size:</p>
+                <select class="product__description--select">
+                  <option value="S" class="product__description--option">
+                    S
+                  </option>
+                  <option value="M" class="product__description--option">
+                    M
+                  </option>
+                  <option value="L" class="product__description--option">
+                    L
+                  </option>
+                  <option value="XL" class="product__description--option">
+                    XL
+                  </option>
+                  <option value="XXL" class="product__description--option">
+                    XXL
+                  </option>
+                </select>
+              </div>
+            </div>
+
+            <a href="#" class="btn"><span>Add</span> to bag</a>
+          </div>
+
+          <div class="product__description--details">
+            <div class="product__description--info">
+              <div class="product__description--top">
+                <p class="product__description--heading">Description</p>
+
+                <svg class="product__description--btn">
+                  <use xlink:href="img/sprite.svg#arrow-right"></use>
+                </svg>
+              </div>
+              <p class="product__description--text">
+                A FULLY LINED ATTICUS SUIT WITH PEAK LAPELS. CRAFTED OF HIGH
+                TWIST MOHAIR SILK.
+              </p>
+            </div>
+
+            <div class="product__description--info">
+              <div class="product__description--top">
+                <p class="product__description--heading">Delivery</p>
+
+                <svg class="product__description--btn">
+                  <use xlink:href="img/sprite.svg#arrow-right"></use>
+                </svg>
+              </div>
+              <p class="product__description--text">
+                A FULLY LINED ATTICUS SUIT WITH PEAK LAPELS. CRAFTED OF HIGH
+                TWIST MOHAIR SILK.
+              </p>
+            </div>
+
+            <div class="product__description--info">
+              <div class="product__description--top">
+                <p class="product__description--heading">Details</p>
+
+                <svg class="product__description--btn">
+                  <use xlink:href="img/sprite.svg#arrow-right"></use>
+                </svg>
+              </div>
+              <p class="product__description--text">
+                A FULLY LINED ATTICUS SUIT WITH PEAK LAPELS. CRAFTED OF HIGH
+                TWIST MOHAIR SILK.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bag hidden" id="bag">
+        <p class="map">
+          <a href="#" class="map__link">Homepage</a> >
+          <a href="#" class="map__link">Bag</a>
+        </p>
+
+        <h2 class="heading-2 mt-sm">Bag</h2>
+
+        <div class="bag__container mt-sm">
+          <div class="bag__items">
+            <p class="bag__title">Items</p>
+            <div class="bag__items--container"></div>
+          </div>
+
+          <div class="bag__checkout">
+            <p class="bag__title ta-c">Checkout</p>
+            <form action="" class="checkout__form">
+              <input
+                type="text"
+                class="checkout__input"
+                placeholder="Name"
+                required
+              />
+              <input
+                type="phone"
+                class="checkout__input"
+                placeholder="Phone"
+                required
+              />
+              <input
+                type="address"
+                class="checkout__input"
+                placeholder="Address"
+                required
+              />
+
+              <p class="checkout__price--label">
+                Total Costs: <span class="checkout__price">$</span>
+              </p>
+
+              <button class="checkout__btn">Checkout</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__socials">
+        <a href="#" class="footer__socials--link">
+          <svg class="footer__icon">
+            <use xlink:href="img/sprite.svg#vk"></use>
+          </svg>
+        </a>
+
+        <a href="#" class="footer__socials--link">
+          <svg class="footer__icon">
+            <use xlink:href="img/sprite.svg#tg"></use>
+          </svg>
+        </a>
+
+        <a href="#" class="footer__socials--link">
+          <svg class="footer__icon">
+            <use xlink:href="img/sprite.svg#whatsapp"></use>
+          </svg>
+        </a>
+
+        <a href="#" class="footer__socials--link">
+          <svg class="footer__icon">
+            <use xlink:href="img/sprite.svg#inst"></use>
+          </svg>
+        </a>
+      </div>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#suits" class="nav__link">Suits</a>
+          </li>
+          <li class="nav__item">
+            <a href="#product" class="nav__link">Product</a>
+          </li>
+          <li class="nav__item"><a href="#bag" class="nav__link">Bag</a></li>
+        </ul>
+      </nav>
+
+      <p class="footer__credits">
+        2020 All rights reserved. Created by Dmytro Sereda
+      </p>
+    </footer>
+  </body>
+</html>

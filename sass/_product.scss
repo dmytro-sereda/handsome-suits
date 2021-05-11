@@ -1,0 +1,173 @@
+.product {
+  display: flex;
+  justify-content: space-between;
+  // display: none;
+  // opacity: 0;
+  transition: all 0.4s;
+  padding: 4rem 0;
+
+  @media only screen and (max-width: $bp-big) {
+    flex-direction: column;
+  }
+
+  &__img {
+    display: block;
+    height: 18.6rem;
+    margin: 0 auto;
+    cursor: pointer;
+
+    &--wrapper {
+      &:not(:last-child) {
+        margin-bottom: 3.5rem;
+      }
+
+      width: 100%;
+    }
+
+    &--container {
+      display: flex;
+      flex-direction: column;
+      width: 16.8rem;
+      @media only screen and (max-width: $bp-big) {
+        flex-direction: row;
+        width: 100%;
+        order: 0;
+      }
+    }
+  }
+
+  &__display {
+    width: 97rem;
+    height: 86rem;
+    background-color: $color-tertiary-light;
+
+    @media only screen and (max-width: $bp-big) {
+      width: 100%;
+      margin-bottom: 3rem;
+      order: -1;
+    }
+
+    &--img {
+      display: block;
+      // width: 36.5rem;
+      height: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  &__description {
+    width: 33.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media only screen and (max-width: $bp-big) {
+      width: 100%;
+    }
+
+    // Top part
+
+    &--size {
+      font-size: 2rem;
+      @media only screen and (max-width: $bp-medium) {
+        font-size: 1.6rem;
+        font-weight: 400;
+      }
+    }
+
+    &--item {
+      margin-bottom: 3.5rem;
+    }
+
+    &--label {
+      font-size: 1.6rem;
+      font-weight: 300;
+      text-transform: uppercase;
+      color: $color-tertiary-dark;
+      margin-bottom: 0.5rem;
+    }
+
+    &--price {
+      font-size: 1.6rem;
+      font-weight: 400;
+    }
+
+    &--color {
+      width: 2.6rem;
+      height: 2.6rem;
+      background-color: #6b5e4d;
+      border: 0.3rem solid $color-main-dark;
+    }
+
+    &--select {
+      border: none;
+      border-bottom: 1px solid $color-main-dark;
+      color: $color-main-dark;
+      width: 17rem;
+      font-family: 'Futura PT', sans-serif;
+      cursor: pointer;
+
+      appearance: none;
+      background: url('../img/arrow-down.svg') no-repeat right;
+
+      @media only screen and (max-width: $bp-big) {
+        font-size: 1.6rem;
+        background-size: 1.5rem;
+      }
+    }
+
+    &--option {
+      font-family: 'Futura PT', sans-serif;
+    }
+
+    &--char {
+      @media only screen and (max-width: $bp-big) {
+        display: flex;
+
+        & > * {
+          margin-right: 5rem;
+        }
+      }
+    }
+
+    // Bottom part
+
+    &--info {
+      padding: 1.8rem 0;
+      border-bottom: 1px solid $color-tertiary-light;
+      border-top: 1px solid $color-tertiary-light;
+    }
+
+    &--top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.4s;
+      // margin-bottom: 1.3rem;
+    }
+
+    &--heading {
+      font-weight: 300;
+      font-size: 1.6rem;
+      color: $color-tertiary-dark;
+      text-transform: uppercase;
+    }
+
+    &--btn {
+      cursor: pointer;
+      transition: all 0.2s;
+      width: 0.95rem;
+      height: 1.9rem;
+    }
+
+    &--text {
+      font-size: 1.4rem;
+      font-weight: 300;
+      // transition: all 0.4s;
+      text-transform: uppercase;
+      color: $color-tertiary-dark;
+      height: 0;
+      opacity: 0;
+    }
+  }
+}
