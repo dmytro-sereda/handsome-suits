@@ -32,6 +32,7 @@
         flex-direction: row;
         width: 100%;
         order: 0;
+        margin-bottom: 4rem;
       }
     }
   }
@@ -47,11 +48,19 @@
       order: -1;
     }
 
+    @media only screen and (max-width: $bp-medium) {
+      width: 100%;
+      height: auto;
+    }
+
     &--img {
       display: block;
       // width: 36.5rem;
       height: 100%;
       margin: 0 auto;
+      @media only screen and (max-width: $bp-medium) {
+        width: 100%;
+      }
     }
   }
 
@@ -131,6 +140,12 @@
     }
 
     // Bottom part
+
+    &--details {
+      @media only screen and (max-width: $bp-big) {
+        margin-top: 4rem;
+      }
+    }
 
     &--info {
       padding: 1.8rem 0;

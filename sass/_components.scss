@@ -93,6 +93,7 @@
   @media only screen and (max-width: $bp-small) {
     height: 0;
     opacity: 0;
+    flex-direction: column;
   }
 
   &__btn {
@@ -132,6 +133,10 @@
         border-right: 1px solid $color-tertiary-dark;
         border-bottom: none;
         padding-right: 4rem;
+      }
+
+      @media only screen and (max-width: $bp-small) {
+        border-bottom: 1px solid $color-tertiary-dark;
       }
     }
   }
@@ -381,7 +386,7 @@
 
 // HAMBURGER
 .hamburger {
-  height: auto;
+  height: 4rem;
   width: 3.2rem;
   cursor: pointer;
   display: none;
