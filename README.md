@@ -20,4 +20,8 @@ E-commerce website selling suits. This product can mimic some of React features 
 
 `npm run build` - parcel builds final project into the dist folder
 
+## Integrations
+
+I have connected this application to Netlify and enabled continous integration. Whenever there are new commits to this repo, netlify will automatically `run build` and serve the client with the new version of the application.
+
 _Please note: filters and search are unavailable, since the objective was to dynamically generate cart and product page._
